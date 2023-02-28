@@ -1,0 +1,13 @@
+div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    position: fixed;
+    z-index: 1;
+}
+
+ion-button{
+    width: 30%;
+    font-size: smaller;
+}

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Créer mon pokémon</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-header/>
+  <div id="container">
+    <form [formGroup]="pokemonForm" (ngSubmit)="onSubmit()">
+      <ion-item>
+        <ion-label for="name" position="floating">Nom du nouveau Pokémon :</ion-label>
+        <ion-input type="text" formControlName="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-label for="type" position="floating">Type : </ion-label>
+      <ion-input id="type" type="text" formControlName="type"></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-label for="desc" position="floating">Description : </ion-label>
+      <ion-input id="desc" type="text" formControlName="desc"></ion-input>
+      </ion-item>
+      <ion-thumbnail *ngIf="image != ''">
+        <img id="cardImage" alt="Photographie Pokémon personnalisé" src="{{image}}"/>
+      </ion-thumbnail>
+      <ion-button (click)="takePicture()">Choisir une image</ion-button>
+      <ion-button type="submit">Créer mon Pokémon</ion-button>
+    </form>
+  </div>
+</ion-content>

@@ -1,20 +1,22 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Pokedex</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content>
+  <app-header/>
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong style="margin: 5%;">Mon pokémon aléatoire !</strong>
+      <ion-card>
+        <img id="cardImage" alt="Silhouette de {{ pokemon?.name }}" src="{{ pokemon?.sprites.front_default }}" />
+        <ion-card-header>
+          <ion-card-title>{{ pokemon?.name }}</ion-card-title>
+          <ion-card-subtitle>Type : {{ pokemon?.type}}</ion-card-subtitle>
+          <ion-card-subtitle>Numéro : {{ pokemon?.id }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>{{ pokemon?.desc }}</ion-card-content>
+      </ion-card>
+      <ion-button fill="clear" size="small" (click)="createNewPokemon()">Créer mon pokémon</ion-button>
   </div>
 </ion-content>

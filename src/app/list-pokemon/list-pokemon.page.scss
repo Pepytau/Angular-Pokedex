@@ -1,0 +1,62 @@
+#cardList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#cardImage{
+  width: 50%;
+}
+
+ion-card-content {
+  font-size: small;
+  margin-bottom: 10%;
+}
+
+ion-card {
+  min-width: 300px;
+  max-width: 18%;
+  text-align: center;
+  max-height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ion-button {
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+  font-size: 10pt;
+  text-transform: none;
+}
+
+ion-spinner {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  left: 45%;
+  width: 10%;
+  height: 10%;
+}
+
+#searchBar {
+  width: 30%;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: 3%;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#titleSearch{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  flex-direction: row;
+}

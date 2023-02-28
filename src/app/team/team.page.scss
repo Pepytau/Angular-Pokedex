@@ -1,0 +1,53 @@
+#container {
+    text-align: center;
+    padding: 2%;
+    margin-top: 60px;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  strong{
+    display: block;
+  }
+
+  ion-button {
+    margin: 2%;
+  }
+
+  ion-thumbnail {
+    --border-radius: 15px;
+    margin: 2%;
+    --size: 200px;
+}
+
+  ion-spinner {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+
+  #cardList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  ion-card {
+    min-width: 250px;
+    max-width: 25%;
+    text-align: center;
+    max-height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+#cardList {
+  display: flex;
+  padding: 2%;
+}
